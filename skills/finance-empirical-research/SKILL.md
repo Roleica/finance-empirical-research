@@ -22,6 +22,7 @@ description: Understand heterogeneous local economic and financial datasets, gen
 | 文献及研究重合核验 | [literature.md](references/literature.md) |
 | 分工、审核与恢复交接 | [coordination.md](references/coordination.md) |
 | 写入或查询持久记录 | [records.md](references/records.md) |
+| 编写、更新或审核阶段报告与最终报告 | [reporting.md](references/reporting.md) |
 
 ## 全流程
 
@@ -39,5 +40,7 @@ description: Understand heterogeneous local economic and financial datasets, gen
 先判断模块假设是否匹配，记录 `reuse / adapt / custom` 及理由。用适合且已可用的语言与方法。生成代码留在项目输出目录，不把 Skill 改成单项目专用。程序有输入检查、失败记录、复跑命令和数值校验；成功退出不等于模型正确。`scripts/ledger.py` 仅提供可替换的 JSONL 查询、指纹与覆盖检查，不解析所有表，也不替 Agent 选模型。
 
 ## 完成条件
+
+面向人的主要交付物是阶段匹配的学术报告，面向复用的交付物是完整证据包。探索层生成全量探索总报告；每个实际深化的研究问题生成独立专题实证报告。具体结构、模板、图表与数字溯源及报告审核见 [reporting.md](references/reporting.md)。仅规划或数据理解时不生成虚假的完整实证报告；没有合格候选也应如实交付探索发现。
 
 提交简短入口、数据结构 README、全量规格与结果、方法及代码、候选与审核、文献证据、环境和未完成项；只生成本轮实际经过阶段的记录。结论可回到输入版本、样本、代码和完整表，失败与不显著同样保留。分开报告结构验证、数值实测、独立审核和未测试能力。Skill 不保证无限后台运行，也不绕过权限或应用限制。

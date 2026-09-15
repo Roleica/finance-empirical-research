@@ -56,7 +56,18 @@ flowchart TD
     F -->|有依据地修复或更换候选| D
 ```
 
-Skill 入口在 [SKILL.md](skills/finance-empirical-research/SKILL.md)。六份按需加载的参考文件分别说明数据、探索、推断、文献、协调和记录。唯一辅助程序 `scripts/ledger.py` 只负责 JSONL 检索、SHA-256 指纹和规格—结果状态对账，不是通用数据解析器或计量引擎。
+Skill 入口在 [SKILL.md](skills/finance-empirical-research/SKILL.md)。七份按需加载的参考文件分别说明数据、探索、推断、文献、协调、记录和报告。唯一辅助程序 `scripts/ledger.py` 只负责 JSONL 检索、SHA-256 指纹和规格—结果状态对账，不是通用数据解析器或计量引擎。
+
+## 两层学术报告
+
+- **全量探索总报告**：汇总数据与连接关系、组合空间、实际执行覆盖、整体结果分布、多重检验、候选地图及未完成项。
+- **专题实证报告**：每个实际深化的问题独立成文，包含摘要、引言、经济逻辑、数据与变量、研究设计、主要结果、稳健性与识别讨论、适用的机制和拓展分析、结论、文献及附录。
+
+只做规划/数据理解时交付对应阶段报告；探索未完成应明确标注，无合格候选也保留发现。报告不替代完整结果和代码，不把探索后解释写成事前假设，也不为补齐章节编造检验。交付时核对正文—表图—结果—代码，保留逐项数字证据映射和实查范围。
+
+默认保留 Markdown/LaTeX 源稿；完整报告在环境支持时同时导出 DOCX/PDF，无法导出则明确说明。报告正文按需读取，不增加冷启动的必读全文。
+
+详见 [报告规范](skills/finance-empirical-research/references/reporting.md)、[探索总报告模板](skills/finance-empirical-research/assets/exploration-report.md)和[专题报告模板](skills/finance-empirical-research/assets/study-report.md)。
 
 ```bash
 python3 skills/finance-empirical-research/scripts/ledger.py query records.jsonl --query 中介 --fields id,status,method

@@ -26,7 +26,7 @@ class PackageTests(unittest.TestCase):
 
     def test_small_skill_payload(self):
         files = [p for p in SKILL.rglob('*') if p.is_file() and '__pycache__' not in p.parts]
-        self.assertEqual(len(files), 9)
+        self.assertEqual(len(files), 12)
         for path in files:
             self.assertFalse(path.is_symlink())
             self.assertLess(path.stat().st_size, 100_000)
