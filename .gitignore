@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+.env
+.env.*
+data/
+outputs/
+private/
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.dta
+*.rds
+*.zip

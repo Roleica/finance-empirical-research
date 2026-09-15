@@ -1,0 +1,4 @@
+interface:
+  display_name: "金融经济实证研究"
+  short_description: "面向异构本地数据的全量探索、实证分析、独立审核与轻量研究交接"
+  default_prompt: "使用 $finance-empirical-research 理解指定数据，按当前任务范围完成可追溯的实证研究。"
